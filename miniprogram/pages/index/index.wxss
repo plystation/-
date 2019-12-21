@@ -1,0 +1,27 @@
+/**index.wxss**/
+
+page {
+  background: #F2F3F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.welcome-content{
+  padding-top:12px;
+  padding-left:32px;
+  font-size:16px;
+  font-weight:normal;
+  color:#000000;
+}
+.app-card{
+  position:relative;
+  background-color: #ffffff;
+  width:156px;
+  height:200px;
+  border-radius:4px;
+  left:32px;
+  top:12px;
+}
+.store_name{
+  font-size:12px;
+}

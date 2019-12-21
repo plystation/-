@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="welcome-content">
+    <text>“尺马门店管理,\n用手机，随时随地，管理您的店铺”</text>
+</view>
+<view class="app-card" style="flex-direction:row;">
+  <view class="store_name">
+    <text>杭州江干区一号店</text>
+  </view>
+</view>
