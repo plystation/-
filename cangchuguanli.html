@@ -1,0 +1,177 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:cangchuguanli</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="-">仓储管理</h1>
+<p>仓库管理包括出库管理、入库管理、盘点管理、库存调拨、库存查询和追踪码查询</p>
+<h2 id="1-">1  出库管理</h2>
+<p>出库管理包括出库通知单和出库单两个子模块</p>
+<p>前序需要出库的业务单据处理完成后，会生成出库通知单，仓管员根据通知单处理出库即可；支持进行出库和终止操作。</p>
+<ul>
+<li>出库通知单列表
+<img src="https://public-1300125002.cos.ap-nanjing.myqcloud.com/%E5%87%BA%E5%BA%93%E9%80%9A%E7%9F%A5%E5%8D%95.png" alt="image"></li>
+</ul>
+<ul>
+<li>出库制单</li>
+</ul>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200727165527867.png" alt="image-20200727165527867"></p>
+<ul>
+<li>出库单
+<img src="https://public-1300125002.cos.ap-nanjing.myqcloud.com/%E5%87%BA%E5%BA%93%E5%8D%95.png" alt="image"></li>
+</ul>
+<h2 id="2-">2  入库管理</h2>
+<p>需要入库的业务单据处理完成后，则会生成入库通知单，仓管员根据通知单进行入库制单即可；支持进行入库和终止操作。</p>
+<ul>
+<li><p>入库管理
+<img src="https://public-1300125002.cos.ap-nanjing.myqcloud.com/%E5%85%A5%E5%BA%93%E7%AE%A1%E7%90%86.png" alt="image"></p>
+</li>
+<li><p>入库通知单列表</p>
+</li>
+</ul>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200727142721247.png" alt="image-20200727142721247"></p>
+<ul>
+<li><p>入库通知单详情</p>
+<p>详情中包括通知单详情、打包列表和变更记录三个子模块</p>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200727162140227.png" alt="image-20200727162140227"></p>
+</li>
+<li><p>入库制单</p>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200727155325532.png" alt="image-20200727155325532"></p>
+</li>
+<li><p>创建“打包“</p>
+<p>入库通知单-&gt;打包-&gt;新的打包-&gt;添加商品-&gt;合并入库</p>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200727144727304.png" alt=""></p>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200727144928607.png" alt="image-20200727144928607"></p>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200727145527451.png" alt="image-20200727145527451"></p>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200727145720756.png" alt="image-20200727145720756"></p>
+</li>
+</ul>
+<h2 id="3-">3  盘点管理</h2>
+<p>盘点分为全盘、条件盘点和单款盘点三种类型</p>
+<p>全盘：盘点所有商品,盘点完毕确认后，所盘点仓库的库存整体更新；</p>
+<p>条件盘点：盘点选择商品属性的商品，只更新相应属性的商品库存；</p>
+<p>单款盘点：盘点对应商品款号的商品，只更新相应款号的商品库存；</p>
+<ul>
+<li><p>新增盘点单</p>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200728103002226.png" alt="image-20200728103002226"></p>
+</li>
+<li><p>盘点，添加“盘点”到的商品，一张盘点单支持多次“盘点”</p>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200728144745454.png" alt="image-20200728144745454"></p>
+</li>
+</ul>
+<ul>
+<li><p>“盘点单”详情-盘点结束前，可编辑商品数量</p>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200728110127421.png" alt="image-20200728110127421"></p>
+</li>
+<li><p>详情-盘点结束后，生成“差异单”，商品数量不可再更改；</p>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200728151604140.png" alt="image-20200728151604140"></p>
+</li>
+<li><p>差异预览，未“盘点结束”前可查看有差异的商品</p>
+<p><img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200728150253500.png" alt="image-20200728150253500"></p>
+</li>
+</ul>
+<h2 id="4-">4  库存调拨</h2>
+<p>库存调拨，支持将商品从一个仓库转移到另一个仓库，其流程如下:
+新增-&gt;提交-&gt;审核-&gt;出库（调出仓库生成出库单，库存扣减）-&gt;确认入库（调入仓库生成入库单，库存增加）</p>
+<ul>
+<li>库存调拨单列表
+<img src="https://public-1300125002.cos.ap-nanjing.myqcloud.com/%E5%BA%93%E5%AD%98%E8%B0%83%E6%8B%A8%E5%8D%95%E5%88%97%E8%A1%A8.png" alt="image"></li>
+</ul>
+<ul>
+<li>库存调拨单新增
+<img src="https://scs-1300631561.cos.ap-chengdu.myqcloud.com/sizehorse/implementation/image-20200728172628756.png" alt="image-20200728172628756"></li>
+</ul>
+<h2 id="5-">5  库存查询</h2>
+<p>查询企业的商品库存情况，支持&quot;款号”、“仓库”筛选；也可直接导出“选定仓库”的库存</p>
+<ul>
+<li><p>库存查询
+<img src="https://public-1300125002.cos.ap-nanjing.myqcloud.com/%E5%BA%93%E5%AD%98%E6%9F%A5%E8%AF%A2.png" alt="image"></p>
+</li>
+<li><p>库存导出
+<img src="https://public-1300125002.cos.ap-nanjing.myqcloud.com/%E5%AF%BC%E5%87%BA%E5%BA%93%E5%AD%98%E9%80%89%E9%A1%B9.png" alt="image"></p>
+</li>
+</ul>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>
